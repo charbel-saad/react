@@ -1,0 +1,313 @@
+
+.dash_left{
+    float: left;
+}
+.dash_left_part1{
+    width:800px;
+    
+    height: 50px;
+}
+#mySearch {
+    width: 600px;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 775px;
+    border: 1px solid #ddd;
+    height: 70px;
+    border-radius: 5px;
+  }
+  
+    #myMenu li a:hover {
+      width:775px;
+    background-color: #eee;
+}
+
+.dash_add_btn{
+    margin-left: 120px;
+    background-color: white;
+    border:2px solid #DCC19B;
+    color: #DCC19B;
+    font-size:30px;
+    font-weight: 800;
+    height: 45px;
+    width:45px;
+    border-radius: 5px;
+    padding: 0px;
+
+}
+.dash_add_btn:hover{
+    cursor: pointer;
+    background-color:#DCC19B ;
+    color: white;
+}
+
+
+
+.dash_left_part2{
+width:800px;
+margin-top:20px;
+}
+.dash_right{
+    
+    float: left;
+    margin-left:50px;
+    width:850px;
+}
+.dash_accordion{
+    width:812px;
+    background-color: white;
+}
+.accordion_services_panel{
+    height: 680px;
+}
+.accordion_services_name{
+    margin:30px;
+    width:800px;
+}
+.accordion_title{
+    font-size:18px;
+    opacity: 0.8;
+    margin-left:2px;
+    width:300px;
+}
+.accordion_name_input{
+    margin-top:20px;
+    width:780px;
+    height: 35px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+}
+.accordion_currency{
+    width:50px;
+    height: 35px;
+    border: 1px solid #ddd;
+    margin-left:305px;
+    margin-top:-5px;
+    font-size:16px;
+    background-color:#ddd;
+    border-radius: 5px;
+    align-content: center;
+
+}
+.accordion_currency p{
+    width:60px;
+    height: 20px;
+    text-align: center;
+    margin-top:5px;
+    margin-left:-5px;
+}
+.sale_tax_select{
+    margin-top:30px;
+    width:370px;
+}
+.accordion_cancel_btn{
+width:100px;
+font-size:16px;
+color:#DCC19B ;
+background-color: white;
+border:none;
+margin-right:5px;
+margin-left:600px;
+}
+.accordion_cancel_btn:hover{
+    cursor: pointer;
+    }
+
+.accordion_save_btn{
+    width:100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size:16px;
+    color:white ;
+    background-color: #DCC19B;
+    border:none;
+    margin-right:5px;
+}
+.accordion_save_btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#DCC19B;
+    border:1px solid #DCC19B;
+}
+
+.accordion_time_panel{
+    height: 200px;
+}
+.categories_select{
+    margin-top:30px;
+    width:800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .dash_left_part1{
+        width:450px;
+        
+        height: 50px;
+    }
+    #mySearch {
+        width: 250px;
+        font-size: 18px;
+        padding: 11px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    #myMenu li a {
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 400px;
+        border: 1px solid #ddd;
+        height: 70px;
+        border-radius: 5px;
+    }
+
+    #myMenu li a:hover {
+        width:400px;
+      background-color: #eee;
+  }
+  
+    .dash_right{
+        margin-top:50px;
+        float: left;
+        margin-left:0px;
+        width:400px;
+    }
+    .dash_accordion{
+        width:400px;
+        background-color: white;
+    }
+    .accordion_services_panel{
+        height: 700px;
+    }
+    .accordion_services_name{
+        margin:30px;
+        width:350px;
+    }
+    .accordion_title{
+        font-size:18px;
+        opacity: 0.8;
+        margin-left:2px;
+        width:300px;
+    }
+    .accordion_name_input{
+        margin-top:20px;
+        width:350px;
+        height: 35px;
+        border:1px solid #ddd;
+        border-radius: 5px;
+    }
+    .accordion_currency{
+        width:50px;
+        height: 35px;
+        border: 1px solid #ddd;
+        margin-left:305px;
+        margin-top:-5px;
+        font-size:16px;
+        background-color:#ddd;
+        border-radius: 5px;
+        align-content: center;
+    
+    }
+    .accordion_currency p{
+        width:60px;
+        height: 20px;
+        text-align: center;
+        margin-top:5px;
+        margin-left:-5px;
+    }
+    .sale_tax_select{
+        margin-top:30px;
+        width:300px;
+    }
+    .accordion_cancel_btn{
+    width:100px;
+    font-size:16px;
+    color:#DCC19B ;
+    background-color: white;
+    border:none;
+    margin-right:5px;
+    margin-left:100px;
+    }
+    .accordion_cancel_btn:hover{
+        cursor: pointer;
+        }
+    
+    .accordion_save_btn{
+        width:100px;
+        height: 40px;
+        border-radius: 5px;
+        font-size:16px;
+        color:white ;
+        background-color: #DCC19B;
+        border:none;
+        margin-right:5px;
+    }
+    .accordion_save_btn:hover{
+        cursor: pointer;
+        background-color: white;
+        color:#DCC19B;
+        border:1px solid #DCC19B;
+    }
+    
+    .accordion_time_panel{
+        height: 200px;
+    }
+    .categories_select{
+        margin-top:30px;
+        width:300px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+}

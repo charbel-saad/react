@@ -1,41 +1,51 @@
 import React, { useState } from 'react'
 import { Checkbox, Collapse } from 'antd';
-
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
 
 
 const lebanon=
 [
-{
-        "akkar":[ 
-            {"_id": 1,"name": "Halba"},
-            {"_id": 2,"name": "Bire"},
-        {
-            "_id": 3,
-            "name": "Qoubaiyat"
-        }],
+
+    {"country_name":"akkar"
+    ,
+    
+    "akkar":[ 
+        {"_id": 1,"name": "Halba"},
+        {"_id": 2,"name": "Bire"},
+    {
+        "_id": 3,
+        "name": "Qoubaiyat"
+    }]}
+        ,{"country_name":"baalbek",
         "baalbek":[
             {
-                "_id": 1,
+                "_id": 4,
                 "name": "Baalbek"
             },
             {
-                "_id": 2,
+                "_id": 5,
                 "name": "Arsal"
             },
             {
-                "_id": 3,
+                "_id": 6,
                 "name": "Deit-el-Ahmar"
             },
             {
-                "_id": 4,
+                "_id": 7,
                 "name": "Majdloun"
             },
             {
-                "_id": 5,
+                "_id": 8,
                 "name": "Labweh"
             },
             {
-                "_id": 6,
+                "_id": 9,
                 "name": "Khrabieh"
             }
         ]
@@ -45,146 +55,186 @@ const lebanon=
 
 
 
-const akkar = [
-    {
-        "_id": 1,
-        "name": "Halba"
-    },
-    {
-        "_id": 2,
-        "name": "Bire"
-    },
-    {
-        "_id": 3,
-        "name": "Qoubaiyat"
-    }
-]
 
-
-const baalbek = [
-    {
-        "_id": 1,
-        "name": "Baalbek"
-    },
-    {
-        "_id": 2,
-        "name": "Arsal"
-    },
-    {
-        "_id": 3,
-        "name": "Deit-el-Ahmar"
-    },
-    {
-        "_id": 4,
-        "name": "Majdloun"
-    },
-    {
-        "_id": 5,
-        "name": "Labweh"
-    },
-    {
-        "_id": 6,
-        "name": "Khrabieh"
-    }
-]
 
 
 const { Panel } = Collapse
 
-function Loopthroughcities(){
-    return(
+
+
+
+
+
+function CheckBox2(props) {
     
-    lebanon.map((value,index)=>(
-    <span key={index}>{value.name}</span>
-    ))
-    
-    )
-} 
-
-
-
-
-
-
-
-function CheckBox(props) {
-
 const [Checked,setChecked] = useState([])
+    const handleToggle=(value)=>{
+            const currentIndex   =Checked.indexOf(value);
+            const newChecked = [...Checked];
 
-const renderCheckBoxAkkar = () => akkar.map((value,index) =>(
-    <React.Fragment key={index}>
-        <div className="filter_name">
-            <Checkbox
-            type="Checkbox"
+            if(currentIndex ===-1){
+                newChecked.push(value)
+            }else{
+                newChecked.splice(currentIndex,1)
+            }
+
+            setChecked(newChecked);
+            props.handleFilters(newChecked)
+
+
+
+    }
+
+
+
+    const renderCheckBox= (arr) =>{
+        return(
+    
+            arr.map((value,index) =>(
+                        <React.Fragment key={index}>
+                        <div className="filter_name">
+                            <Checkbox
+                            onChange={()=>handleToggle(value.name)}
+                            type="Checkbox"
+                            value={value.name}
+                            checked={Checked.indexOf(value.name) === -1 ? false : true}
+                            
+                            
+                    />
+                    <span >{value.name}</span></div>    
+                    </React.Fragment>   
             
-       />
-       <span >{value.name}</span></div>
-    </React.Fragment>
-))
-
-    return (
-        <div>
-            <Collapse defaultActiveKey={['0']} >
-            <Panel header="Akkar" key="1">
-                    {renderCheckBoxAkkar()}
-                </Panel>
-
-            </Collapse>
-
-
-        </div>
+                    )
+                    )
+            
+            )
         
-    )
-}
-
-
-
-function CheckBox2() {
-    // return(
-    // //     <div>
-    // //     {Object.keys(lebanon).map((key) => {
-    // //        return (
-    // //          <div key={key}>
-    // //             <h1>{key}</h1>
-    // //             {lebanon[key].map((dataItem) => {
-    // //               return (
-    // //                <span key={dataItem.id}>{dataItem.name}</span>
-    // //               )
-    // //              })}
-    // //          </div>
-    // //        )
-    // //      })}
-    // //    </div>
-    // )
-
-    const renderCheckBoxBaalbek = () => lebanon.map((value,index) =>(
-        
-        <React.Fragment key={index}>
-            <div className="filter_name">
-                <Checkbox
-                onChange
-                type="Checkbox"
+    }
+    const renderCheckBoxCountry = (filterArray) => filterArray.map((element)=>{
+        //console.log(
+           return(<Accordion   allowZeroExpanded>
                 
-           />
-           <span >{value['akkar'].name}</span></div>
-        </React.Fragment>
-    ))
+           
+            
+           {/* {Object.keys(element).map((kadaa, index)=>{ */}
+                 <AccordionItem >
+                <AccordionItemHeading >
+                <AccordionItemButton  className="cb_btn">
+                  {/* {kadaa} */}{element.country_name}
+                </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+           {renderCheckBox( element[element.country_name])}
+            </AccordionItemPanel>
+            </AccordionItem>
+            
+            {/* }) */}
+               {/* } */}
+                </Accordion>
+               
+            
+            )
+
+            // Object.keys(element).map((kadaa)=>{
+            //     console.log(element[kadaa]);
+            //     element[kadaa].map((value,index) =>(
+            //                 <React.Fragment key={index}>
+            //                 <div className="filter_name">
+            //                     <Checkbox
+            //                     onChange
+            //                     type="Checkbox"
+                                
+            //             />
+            //             <span >{value.name}</span></div>    
+            //             </React.Fragment>   
+                
+            //             )
+            //             )
+            // })
+        // element.forEach
+        // (test => {
+        //     kadaa.map((value,index) =>(
+        //         <React.Fragment key={index}>
+        //         <div className="filter_name">
+        //             <Checkbox
+        //             onChange
+        //             type="Checkbox"
+                    
+        //     />
+        //     <span >{value.name}</span></div>    
+        //     </React.Fragment>   
+    
+        //     )
+        //     )
+        // }
+        // )
+    }
+    )
+            
+        
+
+    
 
     return (
         
-        <div>
-            <script>console.log(value)</script>
-            <Collapse defaultActiveKey={['0']} >
-            <Panel header="Baalbek-hermel" key="1">
-                   {renderCheckBoxBaalbek()}
-                </Panel>
-
-            </Collapse>
+    <div className="cb_style">
+        
+            {renderCheckBoxCountry(lebanon)}
+            
 
 
-        </div>
+            {/* <AccordionItem >
+            <AccordionItemHeading >
+                
+                <AccordionItemButton className="cb_btn">
+                    Baalbek-Hermel
+                </AccordionItemButton>
+               
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+            {renderCheckBoxBaalbek()}
+            </AccordionItemPanel>
+            </AccordionItem>
+
+            <AccordionItem >
+            <AccordionItemHeading >
+                
+                <AccordionItemButton className="cb_btn">
+                    Baalbek-Hermel
+                </AccordionItemButton>
+               
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+            {renderCheckBoxBaalbek()}
+            </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem >
+            <AccordionItemHeading >
+                
+                <AccordionItemButton className="cb_btn">
+                    Baalbek-Hermel
+                </AccordionItemButton>
+               
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+            {renderCheckBoxBaalbek()}
+            </AccordionItemPanel>
+            </AccordionItem> */}
+
+
+
+
+
+
+
+
+
+{/* 
+        </Accordion> */}
+
+    </div>
     )
     
 }
 
-export  {CheckBox,CheckBox2,Loopthroughcities}
+export  {CheckBox2}

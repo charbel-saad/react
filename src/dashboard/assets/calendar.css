@@ -1,0 +1,83 @@
+.fullCalendar{
+    margin-top:50px;
+    margin-left:100px;
+}
+
+.modal_add_container {
+    padding: 16px;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.modal_add_calendar {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:0;
+    top:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+  /* Modal Content/Box */
+  .modal_add_calendar-content {
+    background-color: #fefefe;
+    margin-top: -50px;
+    margin-left: 550px ;
+    border: 2px solid #ddd;
+    width: 700px; 
+    height:200px;
+    border-radius: 10px;
+}
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.add_label_calendar{
+    width:60px;
+    font-size:18px;
+    color:#DCC19B;
+
+}
+.add_input_calendar{
+    margin-bottom: 10px;
+    width:200px;
+    height: 35px;
+}
+.calendar_btn_div{
+    margin-top:40px;
+    width:550px;
+}
+.add_btn{
+    border:none;
+    background-color: #DCC19B;
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+
+
+}
+.cancelbtn{
+    border:none;
+    background-color: red;
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    margin-left: 100px;
+}

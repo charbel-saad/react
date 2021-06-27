@@ -1,0 +1,203 @@
+.data_table{
+    margin-left:250px;
+    margin-top:100px;
+    width:1400px;
+    border:1px solid #DCC19B;
+    border-radius: 5px;
+    
+}
+#data_table{
+    position: relative;
+    margin-right:50px;
+    margin-left:50px;
+    margin-top:70px;
+    margin-bottom:100px;
+    width:1300px;
+}
+#data_table td{
+    height: 40px;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+#data_table tr{
+    color: #DCC19B;
+}
+.data_table_button{
+    margin-left:1000px;
+    margin-top: -20px;
+position: absolute;
+}
+.data_table_button button{
+    margin:10px;
+    height: 40px;
+    width:50px;
+    border: none;
+    background-color:#DCC19B;
+    color:white;
+    border-radius: 5px;
+}
+.modal_add_container {
+    padding: 16px;
+    margin-left:70px;
+}
+
+.modal_add {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left:0;
+    top:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+  /* Modal Content/Box */
+  .modal_add-content {
+    background-color: #fefefe;
+    margin-top:100px;
+    margin-left: 600px ;
+    border: 2px solid #ddd;
+    width: 500px; 
+    height:600px;
+    border-radius: 10px;
+}
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.add_label{
+    /* width:400px; */
+    display: block;
+    font-size:18px;
+    color:#DCC19B;
+
+}
+.add_input{
+    padding:10px;
+    margin-bottom: 10px;
+    width:300px;
+    height: 35px;
+}
+.btn_div{
+    margin-top:25px;
+    margin-left:-30px;
+    width:400px;
+}
+.add_btn{
+    border:none;
+    background-color: #DCC19B;
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+.cancelbtn{
+    border:none;
+    background-color: red;
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+
+    .data_table{
+        margin-left:100px;
+        margin-top:100px;
+        width:600px;
+        border:1px solid #DCC19B;
+        border-radius: 5px;
+        
+    }
+    #data_table{
+        position: relative;
+        margin-right:50px;
+        margin-left:20px;
+        margin-top:40px;
+        margin-bottom:100px;
+        width:550px;
+    }
+    .data_table_button{
+        margin-left:220px;
+        margin-top: -20px;
+    position: absolute;
+    }
+    .modal_add {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left:0;
+        top:0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+      /* Modal Content/Box */
+      .modal_add-content {
+        background-color: #fefefe;
+        margin-top:100px;
+        margin-left: 100px ;
+        border: 2px solid #ddd;
+        width: 400px; 
+        height:600px;
+        border-radius: 10px;
+    }
+
+.btn_div{
+    margin-top:25px;
+    margin-left:-100px;
+    width:400px;
+}
+.add_btn{
+    border:none;
+    background-color: #DCC19B;
+    width:100px;
+    height: 35px;  
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+.cancelbtn{
+    border:none;
+    background-color: red;
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+}

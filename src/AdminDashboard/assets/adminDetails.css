@@ -1,0 +1,56 @@
+.admin_dt_box{
+    width:500px;
+    height: 500px;
+    margin-top:50px;
+    margin-left:650px;
+    border:2px solid #ddd;
+    border-radius: 10px;
+    
+}
+.admin_dt_contetnt{
+    margin-left:150px;
+    margin-top:50px;
+    width: 600px;
+    height: 500px;
+    float: left;
+}
+.admin_dt_contetnt div{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.admin_dt_contetnt p{
+    color: #DCC19B;
+    font-weight: 500;
+    font-size: 20px;
+}
+.admin_dt_contetnt button{
+    margin-top:50px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #DCC19B;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+
+}
+
+
+.admin_dt_buttons{
+    margin-top:150px;
+    height: 200px;
+
+
+}
+.admin_dt_buttons button{
+    width:200px;
+    margin:20px;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+}

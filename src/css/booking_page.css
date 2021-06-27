@@ -1,0 +1,41 @@
+@media only screen and (min-width:600px) and  (max-width:1300px){
+    .bookingDetail{
+        margin-left:10%;
+        width: 100%;
+    }
+    .booking_page_p1{
+        width:80%;
+    }
+    .left1{
+        width: 80%;
+    }
+    .left2{
+        width: 10%;
+    }
+    .booking_table_case{
+        margin-left:20%;
+        margin-top:2%;
+    }
+    .booking_page_p2{
+        margin-top:1%;
+        margin-left:20%;
+    }
+    .calendar_part{
+        width: 50%;
+        margin-top:5%;
+        margin-left: 1%;
+    }
+    .time_select{
+        margin-left:1%;
+    }
+    .ready_btn{
+        /* float: left; */
+        margin-left: 1%;
+        margin-top:5%;
+    }
+    .employee_select{
+        margin-top:5%;
+    }
+
+
+}

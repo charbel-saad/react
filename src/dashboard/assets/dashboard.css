@@ -1,0 +1,275 @@
+
+
+
+
+
+
+
+
+.dashboard_header{
+    width:1830px;
+    height: 80px;
+    box-shadow: 1px 2px 3px grey;
+}
+.dashboard_logo{
+    margin-left: 800px;
+    margin-top:10px;
+    width:170px
+}
+.Dropdown{
+    margin-right:100px;
+    margin-top:20px;
+    float: right;
+}
+#dropdown-basic{
+    width:150px;
+    height:45px;
+    font-size: 14px;
+    background-color: white;
+    border:2px solid #DCC19B;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+#dropdown-basic:hover{
+    cursor: pointer;
+}
+#dropdown_custom{
+    background-color:white
+}
+.Dropdown_menu{
+    width:150px;
+    height:40px;
+    text-align:center;
+    background-color: white;
+    border:2px solid wheat;
+    
+    font-weight: bold;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+.dashboard_title_before{
+    font-size:70px;
+    opacity: 0.2;
+    color:#DCC19B;
+    margin-left:40%;
+    margin-top:120px;
+    font-style: italic;
+
+}
+.dashboard_title{
+    font-size:50px;
+    color:black;
+    margin-left:42%;
+    margin-top:-60px;
+    font-style: italic;
+}
+.dashboard_content{
+    margin-top:150px;
+    width:100%;
+    height: 800px;
+    margin-left:110px;
+}
+.content_small{
+    float: left;
+
+}
+.card_small{
+    width:500px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px  grey;
+    margin-bottom: 50px;
+
+}
+.card_small_header{
+    background-color:#DCC19B ;
+    height: 60px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+    font-size: 25px;
+    color: white;
+  display: grid;
+
+}
+.view_btn{
+    font-size:20px;
+    color: #DCC19B;
+    background-color: white;
+    border:none;
+    float: right;
+    margin-right:20px;
+    margin-top:-40px;
+}
+.view_btn:hover{
+    cursor: pointer;
+}
+
+
+.card_big{
+    margin-left:550px;
+    width:1150px;
+    height: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px  grey;
+    margin-bottom:50px;
+}
+.card_big_header{
+    background-color:#DCC19B ;
+    height: 80px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: left;
+    font-size: 32px;
+    color: white;
+}
+.dashboard_card_btn{
+    color:white;
+    font-size:20px;
+    width:130px;
+    height: 70px;
+    background-color:#DCC19B ;
+    border: none;
+}
+.dashboard_card_btn:hover{
+cursor: pointer;
+    border-bottom:5px solid gray ;
+}
+
+.card_table{
+    width:1100px;
+    border-collapse: collapse;
+    margin-top:30px;
+    margin-left:25px;
+    border-top:1px solid rgb(212, 197, 197) ;
+}
+.card_table th{
+height: 50px;
+}
+.card_table td{
+    height: 50px;
+    opacity: 0.6;
+    text-decoration: none;
+}
+.card_table a{
+    text-decoration: none;
+    color: peru;
+
+}
+
+
+
+
+
+
+/* 
+
+
+@media only screen and (max-width: 450px){
+    .dashboard_header{
+        width:520px;
+        height: 80px;
+        box-shadow: 1px 2px 3px grey;
+    }
+    .dashboard_logo{
+        margin-left: 150px;
+        margin-top:10px;
+        width:170px
+    }
+    .Dropdown{
+        margin-right:0px;
+        margin-top:10px;
+        float: right;
+    }
+    #dropdown-basic{
+        width:150px;
+        height:45px;
+        font-size: 14px;
+        background-color: white;
+        border:2px solid #DCC19B;
+        box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+        font-weight: bold;
+    }
+    #dropdown-basic:hover{
+        cursor: pointer;
+    }
+    #dropdown_custom{
+        background-color:white
+    }
+    .dashboard_title_before{
+        font-size:60px;
+        opacity: 0.2;
+        color:#DCC19B;
+        margin-left:23%;
+        margin-top:120px;
+        font-style: italic;
+    
+    }
+    .dashboard_title{
+        font-size:40px;
+        color:black;
+        margin-left:30%;
+        margin-top:-60px;
+        font-style: italic;
+    }
+
+    .card_small{
+        width:400px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 0px 2px 3px  grey;
+        margin-bottom: 50px;
+    
+    }
+    .card_big{
+        margin-left:0px;
+        float: left;
+        width:500px;
+        height: 800px;
+        border-radius: 15px;
+        box-shadow: 0px 2px 3px  grey;
+        margin-bottom:50px;
+    }
+    .card_big_header{
+        background-color:#DCC19B ;
+        height: 80px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        text-align: left;
+        font-size: 32px;
+        color: white;
+    }
+    .dashboard_card_btn{
+        color:white;
+        font-size:20px;
+        width:130px;
+        height: 70px;
+        background-color:#DCC19B ;
+        border: none;
+    }
+    .card_table{
+        width:450px;
+        border-collapse: collapse;
+        margin-top:30px;
+        margin-left:25px;
+        border-top:1px solid rgb(212, 197, 197) ;
+    }
+    .card_table th{
+    height: 50px;
+    }
+    .card_table td{
+        height: 50px;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+    .card_table a{
+        text-decoration: none;
+        color: peru;
+    
+    }
+    
+
+
+}
+
+
+ */

@@ -1,0 +1,91 @@
+.hours_content{
+    margin-top:100px;
+    /* border: 2px solid black; */
+    margin-left:150px;
+    margin-right: 50px;
+    /* height: 300px;    */
+}
+.hours_column{
+
+float: left;
+}
+.hours_label{
+margin-top:10px;
+margin-left:20px;
+float: left;
+margin-right: 20px;
+font-size: 18px;
+font-weight: 500;
+}
+
+
+
+.hours_select{
+width: 300px;
+margin-left:50px;
+}
+
+
+.hours_add_btn{
+    margin-left:100px;
+    width:100px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+   background-color: #DCC19B;
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.hours_table{
+
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    .hours_content{
+        margin-top:50px;
+        /* border: 2px solid black; */
+        margin-left:50px;
+        margin-right: 50px;
+        /* height: 300px;    */
+    }
+    .hours_column{
+
+        float: right;
+        }
+
+    .hours_label{
+        margin-top:25px;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        }
+        
+        
+        
+        .hours_select{
+        width: 250px;
+        margin-left:50px;
+        margin-top: 20px;
+        }
+        
+        
+        .hours_add_btn{
+            margin-left:100px;
+            margin-top:20px;
+            width:100px;
+            height: 40px;
+            border: none;
+            border-radius: 15px;
+           background-color: #DCC19B;
+           color: white;
+           font-size: 20px;
+           font-weight: bold;
+        }
+
+
+}
